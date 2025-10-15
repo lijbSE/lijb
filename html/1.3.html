@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 表单 -->
+  <form action="">
+    <!-- 单行文本框和密码框 -->
+    <ul>
+      <li>账号：<input autocomplete="off" type="text" placeholder="请输入账号" name="username" accesskey="i"></li>
+      <li>密码：<input autocomplete="off" type="password" placeholder="请输入密码" password="password"></li>
+      <li>
+        <!-- label方式一 for id -->
+        性别：
+        <input type="radio" name="gender" value="0" id="male">
+        <label for="male">男</label>
+        <!-- label方式二 直接包上 -->
+        <label><input type="radio" name="gender" value="1" checked id="female">女</label>
+      </li>
+      <li>
+        爱好：
+        <input type="checkbox" name="hobby" value="0" checked>足球
+        <input type="checkbox" name="hobby" value="1">篮球
+        <input type="checkbox" name="hobby" value="2">跑步
+      </li>
+      <li>
+        上传文件：<input type="file" name="file">
+      </li>
+      <li>
+        留言：<textarea name="message" id="" cols="30" rows="10"></textarea>
+      </li>
+      <li>
+        <!-- 很难修改的好看，一般不用，仅作了解 -->
+        城市：
+        <select name="city" id="">
+          <option value="0">北京</option>
+          <option value="1" selected>上海</option>
+          <option value="2">广州</option>
+        </select>
+      </li>
+      <li>
+        <button disabled>登录</button>
+      </li>
+    </ul>
+  </form>
+  <div>
+    特殊字符：
+    &lt; 小于号
+    &gt; 大于号
+    &amp; 与号
+    &copy; 版权符号
+    &reg; 注册商标符号
+    &trade; 商标符号
+    &euro; 欧元符号
+    &pound; 英镑符号
+    &yen; 日元符号
+    &cent; 分符号
+    &nbsp; 空格符号
+    &nbsp;&nbsp;&nbsp;&nbsp; 4个空格符号
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8个空格符号
+  </div>
+</body>
+
+</html>

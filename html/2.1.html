@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 类型选择器 */
+    div {
+      color: green;
+      font-size: 20px;
+    }
+
+    li {
+      color: bule;
+    }
+
+    /* 就近原则 */
+    li {
+      color: red;
+    }
+
+    /* 类选择器(权重高于类型选择器) */
+    .pink {
+      color: pink;
+    }
+
+    /* id选择器 */
+    #orange {
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pink">大春</div>
+  <div id="orange">夏洛</div>
+  <div class="pink">秋雅</div>
+  <div>冬梅</div>
+  <ul>
+    <li>猪爸爸</li>
+    <li>猪妈妈</li>
+    <li>佩奇</li>
+    <li>乔治</li>
+  </ul>
+</body>
+
+</html>

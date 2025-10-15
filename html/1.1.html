@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="1">hello world</p>
+    <!-- 想要使用自动播放（刚打开的）需要静音 -->
+    <video src="./media/watch.mp4" controls width="400" autoplay loop muted></video>
+    <!-- 兼容性写法 -->
+    <br><br>
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <video width="500" controls muted loop autoplay>
+        <source src="./media/watch.mp4" type="video/mp4">
+        <p>您的浏览器不支持 video 标签。</p>
+    </video>
+    <br>
+    <br><br><br><br><br>
+    <!-- 内部链接 -->
+    <a href="2.html">2.html</a>
+    <!-- 外部链接 -->
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <a href="https://www.deepseek.com" title="deepseek" target="_blank">deepseek</a>
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <hr><br>
+    <!-- 空链接 -->
+    <a href="#">空链接</a>
+    <!-- 下载链接 -->
+    <!-- 邮件链接 -->
+    <a href="mailto:ljb94zhizhengsun@outlook.com">联系我们</a>
+
+    <!-- 锚点链接 -->
+    <a href="#1">回到顶部</a>
+</body>
+
+
+</html>
